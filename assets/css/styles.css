@@ -1,0 +1,149 @@
+*,
+::after,
+::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --background-header: #211915;
+    ---letter-header: #F8E12E;
+    --background-nav: #42231B;
+    --bacground-nav-two: #5FA199;
+    --background-main: #cec7e4;
+    --background-about: #5e3922;
+}
+img {
+    width: 100px;
+}
+.contain-header {
+    display: flex;
+    justify-content: center;
+    background-color: var(--background-header);
+    color: var(---letter-header);
+    line-height: 100px;
+    gap: 40px;
+    font-weight: bold;
+}
+.img-logo {
+    padding-top: 2px;
+}
+.contain-header a li {
+   list-style: none;
+   text-decoration: none;
+   display: flex;
+  
+}
+nav {
+    z-index: 5;
+    position: sticky;
+}
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--background-nav);
+    padding: 10px 0px;
+}
+nav ul li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.contain-main {
+    background-color: var(--background-main);
+}
+.img-hockey {
+    width: 300px;
+    height: 230px;
+    
+}
+.contain-main h2 {
+    text-align: center;
+    padding-top: 20px;
+}
+.contain-div {
+    display: flex;
+    justify-content: space-around; 
+    margin: auto;
+    margin-top: 30px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+/* Footer */
+.main-foot {
+    margin: 0 auto;
+}
+.contain-fot {
+    text-align: center;
+    color: white;
+    background-color: var(--background-header);
+    padding: 25px;
+    border-top: 2px solid var(--background-nav);
+}
+.contain-form {
+    margin-top: 20px;
+    margin: auto;
+}
+/*.*/
+
+/*About*/
+.main_about {
+    text-align: center;
+    background-color: var(--background-about);
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.contain-about-me { 
+    width: 50%;
+}
+.contain-about-me img {
+    margin: auto;
+    
+}
+.contain-about-me p {
+    max-width: 20%;
+    text-align: center;
+}
+.about-txt {
+    max-width: 20%;
+    display: inline-block;
+    
+}
+.about-txt img {
+    float: left;
+    border: 2px solid white;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+/*.*/
+
+/*Contact*/
+.main-form {
+    padding: 78px 0;
+    background-color: var(--background-main);
+    text-align: center;
+}
+fieldset {
+    width: 20%;
+}
+.contain-form label{
+    font-weight: 500;
+    font-family: sans-serif;
+}
+fieldset {
+    border-radius: 20px;
+    margin: auto;
+}
+.btn {
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+    background-color: var(--background-nav);
+}
+/*.*/
