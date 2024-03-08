@@ -1,0 +1,107 @@
+:root {
+    --background-banner: #051923;
+    --background-body: #003554;
+    --background-fot: #006494;
+    --txt-fot: #000;
+    --principal-txt-c: #fff;
+    --header-secondary: #FCE15B;
+    --style-txt: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contain-header>h1{
+    background-color: var(--background-banner);
+    color: var(--principal-txt-c);
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.contain-header span {
+    color: var(--header-secondary);
+}
+.contain-header>h2 {
+    background-color: var(--background-banner);
+    color: var(--principal-txt-c);
+    text-align: center;
+    font-family: var(--style-txt);
+}
+.container-header__nav>ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    position: absolute;
+    right: 200px;
+    top: 40px;
+}
+.container-header__nav a {
+    text-decoration: none;
+    color: var(--principal-txt-c);
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #003554;
+}
+.container-header__nav a[href="#"] {
+    background-color: greenyellow;
+}
+.header-img {
+    background: url(../img/banners/design1_image2.jpg) no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+.contain-main {
+    background-color: var(--background-body);
+    padding: 30px;
+    color: var(--principal-txt-c);
+}
+.contain-article {
+    padding-left: 200px;
+}
+.contain-main img {
+    width: 120px;
+    height: 120px;
+    float: left;
+    background-color: var(--background-banner);
+    border-radius: 50%;
+    padding: 20px;
+    object-fit: contain;
+}
+.contain-main p {
+    text-indent: 30px;
+}
+.contain-main>article p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.contain-fot {
+    background-color: var(--background-fot);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+.contain-fot>small {
+    color: var(--txt-fot);
+    
+}
+
+/*Contact*/
+.contain-contact {
+    display: flex;
+}
+.contain-contact button {
+    border: none;
+    margin-left: 3px;
+    background-color: var(--background-banner);
+    color: white;
+    padding: 4px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.contain-contact p {
+    padding-right: 15px;
+}
+.main_contact {
+    padding: 130px;
+}
