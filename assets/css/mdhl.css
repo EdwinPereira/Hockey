@@ -8,8 +8,8 @@
     --style-txt: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 *,
-::after,
-::before {
+*::after,
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -50,6 +50,7 @@
 .header-img {
     background: url(../img/banners/design1_image2.jpg) no-repeat;
     height: 100vh;
+    aspect-ratio: 480/203;
     width: 100%;
 }
 .contain-main {
@@ -82,10 +83,8 @@
     padding-bottom: 5px;
 }
 .contain-fot>small {
-    color: var(--txt-fot);
-    
+    color: var(--principal-txt-c); 
 }
-
 /*Contact*/
 .contain-contact {
     display: flex;
@@ -105,3 +104,7 @@
 .main_contact {
     padding: 130px;
 }
+.contain-contact input {
+    width: 130px;
+}
+/*.*/
