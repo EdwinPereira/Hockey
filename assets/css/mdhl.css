@@ -47,6 +47,7 @@
 }
 .container-header__nav a[href="#"] {
     background-color: greenyellow;
+    color: var(--txt-fot);
 }
 .header-img {
     background: url(../img/banners/design1_image2.jpg) no-repeat;
