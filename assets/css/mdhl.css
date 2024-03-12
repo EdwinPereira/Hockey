@@ -165,7 +165,9 @@
 
 /*Game_Info*/
 .contain-main__info {
-    background-color: var(--background-body);
+    
+    background: rgb(0,100,148);
+background: linear-gradient(90deg, rgba(0,100,148,0.8) 0%, rgba(0,53,84,0.8) 50%, rgba(37,248,146,0.804359243697479) 100%);
     color: var(--principal-txt-c);
     padding: 50px;
     display: grid;
