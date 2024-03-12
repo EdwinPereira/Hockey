@@ -196,7 +196,7 @@ th {
     background-color: var(--background-banner);
     text-align: center;
 }
-tbody tr:nth-child(1n) {
+tbody tr:nth-child(2n+1) {
     background-color: var(--gray);
     text-align: center;
     
@@ -204,6 +204,10 @@ tbody tr:nth-child(1n) {
 tbody tr:nth-child(2n) {
     background-color: var(--header-secondary);
     color: var(--txt-fot);
+}
+tbody tr:hover {
+    background-color: var(--txt-fot);
+    color: var(--principal-txt-c);
 }
 .contain-info_txt {
     padding-top: 20px;
