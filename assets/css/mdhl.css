@@ -5,6 +5,7 @@
     --txt-fot: #000;
     --principal-txt-c: #fff;
     --header-secondary: #FCE15B;
+    --gray: #333533;
     --style-txt: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 *,
@@ -85,13 +86,14 @@
 .contain-fot {
     background-color: var(--background-fot);
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 5px;
+    padding-top: 50px;
     border-top: 3px solid black;
-    border-bottom: 3px solid black;
+    padding-bottom: 5px;
 }
 .contain-fot>small {
     color: var(--principal-txt-c); 
+    display: flex;
+    justify-content: center;
 }
 /*Contact*/
 .contain-contact {
@@ -161,14 +163,70 @@
 }
 
 
-/*Table*/
+/*Game_Info*/
+.contain-main__info {
+    background-color: var(--background-body);
+    color: var(--principal-txt-c);
+    padding: 50px;
+    display: grid;
+    place-content: center;
+}
+.contain-main__info table caption {
+    text-decoration: underline;
+    font-family: cursive;
+}
+.contain_table h2 {
+    padding-bottom: 20px;
+}
+.contain_table caption {
+    padding-bottom: 15px;
+}
 table,tr,td,th {
     border: 1px solid black;
     border-collapse: collapse;
+    padding: .8rem;
 }
+th {
+    background-color: var(--background-banner);
+}
+.td-color {
+    background-color: var(--background-banner);
+    text-align: center;
+}
+tbody tr:nth-child(1n) {
+    background-color: var(--gray);
+    text-align: center;
+    
+}
+tbody tr:nth-child(2n) {
+    background-color: var(--header-secondary);
+    color: var(--txt-fot);
+}
+.contain-table {
+    margin: 50px;
+}
+.contain-info_txt {
+    padding-top: 20px;
+}
+.contain-info_txt h2 span{
+    font-weight: lighter;
 
-
+}
+.contain-info_txt article span {
+    font-weight: bolder;
+}
+.info_foot div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 18px;
+    color: var(--principal-txt-c);
+}
 .info_foot {
-    margin-top: 100px;
+    font-weight: bold;
+    color: var(--principal-txt-c);
+}
+.info_foot>small {
+    padding-top: 15px;
 }
 /*.*/
