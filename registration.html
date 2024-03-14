@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mighty Ducks</title>
+    <link
+      rel="shortcut icon"
+      href="assets/img/Logotipo.ico"
+      type="image/x-icon">
+    <!-- <link rel="stylesheet" href="assets/css/styles.css"> -->
+    <link rel="stylesheet" href="assets/css/mdhl.css">
+  </head>
+  <body>
+    <div class="index-line"></div>
+    <header>
+      <div class="contain-header">
+        <div class="header-nav_container">
+          <h1>🏑Mighty Ducks <span>Hockey League</span>.</h1>
+          <nav class="container-header__nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="rules.html">Rules</a></li>
+              <li><a href="game_info.html">Info</a></li>
+              <li><a href="#">Form</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="index-line"></div>
+        <div class="header-img"></div>
+        <div class="index-line"></div>
+        <h2>Upcoming Events</h2>
+        <div class="index-line"></div>
+      </div>
+    </header>
+
+    <main class="contain-main">
+      <div class="contain-form">
+        <form action="show_data.html" method="get">
+          <fieldset class="form-first__container">
+            <legend>Registration Form:</legend>
+
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              name="first_name"
+              id="name"
+              placeholder="First Name"
+              required>
+            <label for="last_name">Last Name:</label>
+            <input
+              type="text"
+              name="last_name"
+              id="last_name"
+              placeholder="Last Name"
+              required><br>
+            <label for="address">Street Address:</label>
+            <input
+              type="text"
+              name="address"
+              id="address"
+              placeholder="Address"
+              required><br>
+            <label for="city">City:</label>
+            <input type="text" name="city" id="city" placeholder="city">
+            <label for="postal_code">Zip Code:</label>
+            <input
+              type="number"
+              name="postal_code"
+              id="postal_code"
+              placeholder="Postal Code"
+              required><br>
+            <label for="birthdate">Birth Date:</label>
+            <input type="date" name="birthdate" id="birthdate" required>
+
+            <h4 style="display: inline">Gender:</h4>
+            <label for="female">Female
+              <input type="checkbox" id="female" name="gender" value="male">
+            </label>
+            <label for="male"
+              >Male
+              <input
+                type="checkbox"
+                id="male"
+                name="gender"
+                value="female"></label><br>
+
+            <h4 style="display: inline">Grade:</h4>
+            <input type="checkbox" name="grade" id="pre-school">
+            <label for="pre-school">Pre-School</label>
+
+            <input type="checkbox" name="grade" id="one-st">
+            <label for="one-st"><sup>1st</sup></label>
+
+            <input type="checkbox" name="grade" id="secord-nd">
+            <label for="secord-nd"><sup>2nd</sup></label>
+
+            <input type="checkbox" name="grade" id="third-rd">
+            <label for="third-rd"><sup>3rd</sup></label>
+
+            <input type="checkbox" name="grade" id="four-th">
+            <label for="four-th"><sup>4th</sup></label>
+
+            <input type="checkbox" name="grade" id="five-th">
+            <label for="five-th"><sup>5th</sup></label>
+          </fieldset>
+
+          <fieldset class="form-second__container">
+            <legend>Which elementary school do you live near?</legend>
+            <h3>Closest School:</h3>
+
+            <input type="checkbox" name="closest-school" id="aj-katzenmaier">
+            <label for="aj-katzenmaier">AJ Katzenmaier</label>
+
+            <input type="checkbox" name="closest-school" id="greenbay">
+            <label for="greenbay">Greenbay</label>
+
+            <input type="checkbox" name="closest-school" id="howard-yeager">
+            <label for="howard-yeager">Howard A Yeager</label>
+
+            <input type="checkbox" name="closest-school" id="marjorie-hart">
+            <label for="marjorie-hart">Marjorie P Hart</label>
+
+            <input
+              type="checkbox"
+              name="closest-school"
+              id="north-elementary">
+            <label for="north-elementary">North Elementary</label>
+
+            <input
+              type="checkbox"
+              name="closest-school"
+              id="south-elementary">
+            <label for="south-elementary">South Elementary</label>
+          </fieldset>
+
+          <fieldset class="form-third__container">
+            <legend>
+              What position(s) do you normally play? (check all that apply)
+            </legend>
+
+            <input type="checkbox" name="position-play" id="forward">
+            <label for="forward">Forward</label>
+
+            <input type="checkbox" name="position-play" id="defense">
+            <label for="defense">Defense</label>
+
+            <input type="checkbox" name="position-play" id="midfield">
+            <label for="midfield">Midfield</label>
+
+            <input type="checkbox" name="position-play" id="goalkeeper">
+            <label for="goalkeeper">Goalkeeper</label>
+          </fieldset>
+
+          <fieldset class="form-four__container">
+            <legend>Uniform Size:</legend>
+
+            <input type="checkbox" name="uniform-size" id="y-smal">
+            <label for="y-smal">Youth Smal</label>
+
+            <input type="checkbox" name="uniform-size" id="y-medium">
+            <label for="y-medium">Youth Medium</label>
+
+            <input type="checkbox" name="uniform-size" id="y-large">
+            <label for="y-large">Youth Large</label>
+
+            <input type="checkbox" name="uniform-size" id="small">
+            <label for="small">Small</label>
+
+            <input type="checkbox" name="uniform-size" id="medium">
+            <label for="medium">Medium</label>
+
+            <input type="checkbox" name="uniform-size" id="large">
+            <label for="large">Large</label>
+
+            <input type="checkbox" name="uniform-size" id="extra-large">
+            <label for="extra-large">Extra-Large</label>
+          </fieldset>
+
+          <fieldset class="form-five__container">
+            <h2>Permission to Play</h2>
+            <p>
+              I, the parent or guardian of the minor registrant, agree that the
+              registrant and i will abide by all the rules of the Mighty Ducks
+              Hockey League (MDHL). In recognizing the possibility of physical
+              injury associated with hockey and in consideration for the
+              "League" acceting the registrant for its hockey programs and
+              activities, I herebry release, discharge, and/or otherwise
+              indemnify MDHL, their employees and associated personnel and
+              voluteers, including the facilities used for practices and games,
+              against any claim by or on behalf of the registrant as a result of
+              the registrant's participation in the programand/orbeing
+              transported to or from MDHL sponsored activities,which
+              transportation<br />
+              By signing below, I herebyagree andauthorizethe above.In addition,
+              by signing below, lalso<br />
+              acknowledge that I have read the cancellation policy and agree to
+              its terms.
+            </p>
+            <div>
+              <label for="parent_guardian">Parent/GuardianSignature:</label>
+              <input
+                type="text"
+                id="parent_guardian"
+                name="parent_guardian"
+              /><br />
+              <label for="date">Date:</label>
+              <input type="date" id="date" name="date">
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </main>
+    <footer class="contain-fot">
+      <small>All rights reserved &copy;</small>
+    </footer>
+  </body>
+</html>

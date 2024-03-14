@@ -15,14 +15,50 @@
     padding: 0;
     box-sizing: border-box;
 }
-.contain-header>h1{
+.header-nav_container {
+    display: flex;
     background-color: var(--background-banner);
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    padding: .5rem 0;
+}
+.header-nav_container>h1{
     color: var(--principal-txt-c);
-    text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-right: 10px;
+    border-top: 1px solid var(--header-secondary);
+    border-bottom: 1px solid var(--header-secondary);
+    border-left: 10px solid var(--header-secondary);
+    border-right: 10px solid var(--header-secondary);
+    background-color: var(--txt-fot);
+    border-radius: 50px;
 }
 .contain-header span {
     color: var(--header-secondary);
+}
+
+.home:hover {
+    transform: scale(0.7);
+}
+.container-header__nav a:hover {
+    transform: scale(0.7);
+}
+.container-header__nav li{
+    display: inline;
+    list-style: none;
+}
+
+.container-header__nav a {
+    text-decoration: none;
+    color: var(--principal-txt-c);
+    border: 1px solid black;
+    padding: 8px;
+    background-color: var(--background-fot);
+}
+.container-header__nav a[href="#"] {
+    background-color: greenyellow;
+    color: var(--txt-fot);
 }
 .contain-header>h2 {
     background-color: var(--background-banner);
@@ -30,30 +66,13 @@
     text-align: center;
     font-family: var(--style-txt);
 }
-.container-header__nav>ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-    position: absolute;
-    right: 20px;
-    top: 40px;
-}
-.container-header__nav a {
-    text-decoration: none;
-    color: var(--principal-txt-c);
-    border: 1px solid black;
-    padding: 10px;
-    background-color: #003554;
-}
-.container-header__nav a[href="#"] {
-    background-color: greenyellow;
-    color: var(--txt-fot);
-}
 .header-img {
     background: url(../img/banners/design1_image2.jpg) no-repeat;
-    height: 100vh;
+    height: 60vh;
     aspect-ratio: 480/203;
     width: 100%;
+    object-fit: contain;
+    background-size: cover;
 }
 .index-line {
     border: 2px solid black;
@@ -166,9 +185,8 @@
 
 /*Game_Info*/
 .contain-main__info {
-    
     background: rgb(0,100,148);
-background: linear-gradient(90deg, rgba(0,100,148,0.8) 0%, rgba(0,53,84,0.8) 50%, rgba(37,248,146,0.804359243697479) 100%);
+    background: linear-gradient(90deg, rgba(0,100,148,0.8) 0%, rgba(0,53,84,0.8) 50%, rgba(37,248,146,0.804359243697479) 100%);
     color: var(--principal-txt-c);
     padding: 50px;
     display: grid;
@@ -223,6 +241,29 @@ tbody tr:hover {
 .contain-info_txt article span {
     font-weight: bolder;
 }
+
+.info_foot ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.info_foot li {
+    list-style: none;
+}
+.info_foot a {
+    text-decoration: underline;
+    color: bisque;
+}
+.info_foot a:visited {
+    text-decoration: none;
+    color: beige;
+}
+.info_foot a:active {
+    text-decoration: none;
+    color: white;
+}
+
+
 .info_foot div {
     display: flex;
     justify-content: center;
@@ -236,5 +277,68 @@ tbody tr:hover {
 }
 .info_foot>small {
     padding-top: 15px;
+}
+/*.*/
+
+
+
+
+/*Form*/
+.contain-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.contain-form h2,
+fieldset {
+    font-weight: bold;
+}
+.contain-form form {
+    background-color: var(--gray);
+    
+}
+.contain-form label {
+    text-decoration: underline;
+    font-weight: bold;
+    font-family: var(--style-txt);
+}
+.contain-form input {
+    outline: none;
+    border-radius: 5px;
+    line-height: 20px;
+    font-size: 1rem;
+    background: transparent;
+    color: #fff;
+    padding: 0 27px;
+}
+.form-first__container {
+    padding: 1.5rem 0;
+}
+.form-first__container legend {
+    font-weight: bold;
+}
+.contain-form fieldset {
+    width: 50%;
+    margin-inline: auto;
+}
+.form-second__container {
+    padding: 1.5rem 0;
+}
+.form-third__container {
+    padding: 1.5rem 0;
+}
+.form-four__container {
+    padding: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+}
+.form-five__container {
+    padding: 1.5rem 0;
+}
+.form-five__container div {
+    text-align: left;
+    padding: 10px 0;
 }
 /*.*/
