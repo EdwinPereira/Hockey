@@ -22,9 +22,9 @@
               <li><a href="index.html">Home</a></li>
               <li><a href="about.html">About</a></li>
               <li><a href="contact.html">Contact</a></li>
-              <li><a href="rules.html">Rules</a></li>
-              <li><a href="game_info.html">Info</a></li>
-              <li><a href="#">Form</a></li>
+              <li><a href="rules.html">Rules of Play</a></li>
+              <li><a href="game_info.html">Games Schedule</a></li>
+              <li><a href="#">Registration Form</a></li>
             </ul>
           </nav>
         </div>
@@ -77,12 +77,12 @@
 
             <h4 style="display: inline">Gender:</h4>
             <label for="female">Female
-              <input type="checkbox" id="female" name="gender" value="male">
+              <input type="radio" id="female" name="gender" value="male">
             </label>
             <label for="male"
               >Male
               <input
-                type="checkbox"
+                type="radio"
                 id="male"
                 name="gender"
                 value="female"></label><br>
@@ -209,7 +209,11 @@
               <label for="date">Date:</label>
               <input type="date" id="date" name="date">
             </div>
+
+            <button class="submit">Submit</button>
           </fieldset>
+          
+          
         </form>
       </div>
     </main>

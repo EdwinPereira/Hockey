@@ -37,13 +37,6 @@
 .contain-header span {
     color: var(--header-secondary);
 }
-
-.home:hover {
-    transform: scale(0.7);
-}
-.container-header__nav a:hover {
-    transform: scale(0.7);
-}
 .container-header__nav li{
     display: inline;
     list-style: none;
@@ -138,10 +131,6 @@
     width: 130px;
 }
 /*.*/
-
-
-
-
 /*Rules*/
 .rules_main {
     font-family: var(--style-txt);
@@ -181,8 +170,6 @@
     text-indent: 50px;
     list-style-position: inside;
 }
-
-
 /*Game_Info*/
 .contain-main__info {
     background: rgb(0,100,148);
@@ -241,7 +228,6 @@ tbody tr:hover {
 .contain-info_txt article span {
     font-weight: bolder;
 }
-
 .info_foot ul {
     display: flex;
     justify-content: center;
@@ -262,8 +248,6 @@ tbody tr:hover {
     text-decoration: none;
     color: white;
 }
-
-
 .info_foot div {
     display: flex;
     justify-content: center;
@@ -279,10 +263,6 @@ tbody tr:hover {
     padding-top: 15px;
 }
 /*.*/
-
-
-
-
 /*Form*/
 .contain-form {
     display: flex;
@@ -297,7 +277,10 @@ fieldset {
 }
 .contain-form form {
     background-color: var(--gray);
-    
+    padding: 2rem;
+    width: 60%;
+    margin-inline: auto; 
+    border-radius: 20px;
 }
 .contain-form label {
     text-decoration: underline;
@@ -320,7 +303,8 @@ fieldset {
     font-weight: bold;
 }
 .contain-form fieldset {
-    width: 50%;
+    width: 60%;
+    border: 3px solid var(--background-banner);
     margin-inline: auto;
 }
 .form-second__container {
@@ -341,4 +325,49 @@ fieldset {
     text-align: left;
     padding: 10px 0;
 }
+.submit {
+    border: none;
+    padding: .7rem;
+    border-radius: 20px;
+    background-color: var(--principal-txt-c);
+    transition: .7s;
+    transition-property: scale;
+}
+.submit:hover {
+    box-shadow: -2px 0px 10px 2px rgba(0, 0, 0, 0.75);
+    scale: 1.1;
+}
 /*.*/
+/*Maps*/
+.contain-map {
+    margin-top: 2rem;
+    background-color: var(--gray);
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: -2px 0px 10px 8px rgba(67, 114, 86, 0.75);
+}
+.contain-map h2 {
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--header-secondary);
+}
+.contain-map__map {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 50px;
+    padding-top: 2rem;
+    place-content: center;
+}
+.contain-map__map h2{
+    display: none;
+}
+.map {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    
+}
+/*.*/
+
